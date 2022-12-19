@@ -1,6 +1,5 @@
 package com.example.mvvmlivedataapi.ui.Activity.popular_movie
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,12 +8,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.mvvmlivedataapi.adapter.PopularMoviePagedListAdapter
 import com.example.mvvmlivedataapi.data.api.TheMovieDBClient
 import com.example.mvvmlivedataapi.data.api.TheMovieDBInterface
 import com.example.mvvmlivedataapi.data.repository.MoviePagedListRepository
 import com.example.mvvmlivedataapi.data.repository.NetworkState
 import com.example.mvvmlivedataapi.databinding.ActivityMainBinding
-import com.example.mvvmlivedataapi.ui.Activity.single_movie_details.SingleMovieActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

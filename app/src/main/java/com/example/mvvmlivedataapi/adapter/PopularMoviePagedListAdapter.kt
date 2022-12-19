@@ -1,4 +1,4 @@
-package com.example.mvvmlivedataapi.ui.Activity.popular_movie
+package com.example.mvvmlivedataapi.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -18,7 +18,9 @@ import com.example.mvvmlivedataapi.data.entities.Movie
 import com.example.mvvmlivedataapi.data.repository.NetworkState
 import com.example.mvvmlivedataapi.ui.Activity.single_movie_details.SingleMovieActivity
 
-class PopularMoviePagedListAdapter(public val context: Context):PagedListAdapter<Movie,RecyclerView.ViewHolder>(MovieDiffCallback()) {
+class PopularMoviePagedListAdapter(public val context: Context):PagedListAdapter<Movie,RecyclerView.ViewHolder>(
+    MovieDiffCallback()
+) {
     val MOVIE_VIEW_TYPE = 1
     val NETWORK_VIEW_TYPE = 2
     private var networkState: NetworkState? = null
