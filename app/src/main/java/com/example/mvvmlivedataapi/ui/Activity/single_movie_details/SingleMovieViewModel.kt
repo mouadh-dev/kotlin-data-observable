@@ -1,4 +1,4 @@
-package com.example.mvvmlivedataapi.ui.Activity
+package com.example.mvvmlivedataapi.ui.Activity.single_movie_details
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

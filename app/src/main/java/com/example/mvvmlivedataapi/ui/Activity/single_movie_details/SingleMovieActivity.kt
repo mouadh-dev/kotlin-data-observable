@@ -1,4 +1,4 @@
-package com.example.mvvmlivedataapi.ui.Activity
+package com.example.mvvmlivedataapi.ui.Activity.single_movie_details
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -73,7 +73,7 @@ class SingleMovieActivity : AppCompatActivity() {
 
     }
 
-    private fun getViewModel(movieId: Int): SingleMovieViewModel{
+    private fun getViewModel(movieId: Int): SingleMovieViewModel {
         return ViewModelProviders.of(this, object : ViewModelProvider.Factory {
             override fun <T: ViewModel> create(modelClass: Class<T>): T{
                 return SingleMovieViewModel(movieRepository,movieId) as T
